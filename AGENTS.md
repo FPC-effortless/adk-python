@@ -594,3 +594,7 @@ Quick reference to important project files:
 *   **Converting Exceptions to Strings:** `str(e)` can be uninformative. `repr(e)` is often better. For full details including tracebacks and chained exceptions, use functions from the `traceback` module (e.g., `traceback.format_exception(e)`, `traceback.format_exc()`).
 *   **Terminating Programs:** Use `sys.exit()` for expected terminations. Uncaught non-`SystemExit` exceptions should signal bugs. Avoid functions that cause immediate, unclean exits like `os.abort()`.
 *   **Returning None:** Be consistent. If a function can return a value, all paths should return a value (use `return None` explicitly). Bare `return` is only for early exit in conceptually void functions (annotated with `-> None`).
+
+## Shared FPC universal skill
+
+For substantive engineering, product or research tasks, consult `.agents/skills/fpc-universal/SKILL.md` when relevant. This general skill is subordinate to every repository-specific, nested, safety, architecture, verification and release instruction above.
